@@ -1,29 +1,70 @@
 body {
-    font-family: sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
-}
-
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 1rem;
+    background-color: #000;
+    color: #0f0;
+    font-family: 'Courier New', Courier, monospace;
     text-align: center;
+    text-shadow: 0 0 10px #0f0;
 }
 
-main {
+#login-container {
+    margin-top: 100px;
+}
+
+h1 {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+form {
+    display: inline-block;
+    border: 1px solid #0f0;
+    padding: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input {
+    background-color: #111;
+    border: 1px solid #0f0;
+    color: #0f0;
+    padding: 5px;
+    margin-bottom: 10px;
+    width: 200px;
+}
+
+button {
+    background-color: #0f0;
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+button:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+#error-message {
+    color: #f00;
+    text-shadow: 0 0 10px #f00;
+}
+
+#course-content {
     padding: 1rem;
     max-width: 800px;
     margin: 0 auto;
 }
 
-section {
-    margin-bottom: 1rem;
-    background-color: #fff;
-    padding: 1rem;
-    border-radius: 5px;
+#course-content header, #course-content section, #course-content footer {
+    border: 1px solid #0f0;
+    padding: 20px;
+    margin-bottom: 20px;
 }
 
 #course-details img {
@@ -31,32 +72,5 @@ section {
     height: auto;
     display: block;
     margin: 1rem 0;
-}
-
-#cta {
-    text-align: center;
-}
-
-#buy-button {
-    background-color: #28a745;
-    color: #fff;
-    padding: 0.75rem 1.5rem;
-    border: none;
-    border-radius: 5px;
-    font-size: 1.2rem;
-    cursor: pointer;
-}
-
-#buy-button:hover {
-    background-color: #218838;
-}
-
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 1rem;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
+    border: 1px solid #0f0;
 }

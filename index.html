@@ -3,27 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Course Landing Page</title>
+    <title>Top Secret Course</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Welcome to Our Awesome Course!</h1>
-    </header>
-    <main>
+    <div id="login-container">
+        <h1>ACCESS RESTRICTED</h1>
+        <form id="login-form">
+            <label for="username">USERNAME:</label>
+            <input type="text" id="username" name="username" required>
+            <label for="password">PASSWORD:</label>
+            <input type="password" id="password" name="password" required>
+            <button type="submit">DECRYPT</button>
+        </form>
+        <p id="error-message"></p>
+    </div>
+
+    <main id="course-content" style="display: none;">
+        <header>
+            <h1>Welcome, Agent</h1>
+        </header>
         <section id="course-details">
-            <h2>About the Course</h2>
-            <p>This course will teach you everything you need to know about web development. From HTML and CSS to advanced JavaScript, you'll become a web development pro in no time!</p>
-            <img src="https://via.placeholder.com/400x200" alt="Course Image">
+            <h2>TOP SECRET: Web Domination Course</h2>
+            <p>This course will teach you the underground techniques of web manipulation. You will learn to control the web, not just build for it.</p>
+            <img src="https://via.placeholder.com/400x200" alt="Hacker Image">
         </section>
         <section id="cta">
-            <h2>Ready to Start Learning?</h2>
-            <button id="buy-button">Buy Now for $99</button>
+            <h2>You are in. Proceed with caution.</h2>
         </section>
+        <footer>
+            <p>&copy; 2025 Shadow Syndicate</p>
+        </footer>
     </main>
-    <footer>
-        <p>&copy; 2025 Course Inc.</p>
-    </footer>
+
     <script src="script.js"></script>
 </body>
 </html>
